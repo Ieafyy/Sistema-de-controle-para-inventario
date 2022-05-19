@@ -81,4 +81,12 @@ As placas seguem um padrão e (neste cenário ilustrativo), o GRN da placa deve 
 
 <h2>PLACAS CADASTRADAS</h2>
 
-Aqui é possível gerar um relatório de todas as placas cadastradas, mostrando a placa, o local onde ela está, quem requisitou por último a placa, a data da última movimentação e quantas vezes o ciclo saída/entrada foi realizado.
+Aqui é possível gerar um relatório de todas as placas cadastradas, mostrando a placa, o local onde ela está, quem requisitou por último a placa, a data da última movimentação e quantas vezes o ciclo saída/entrada foi realizado. Tal relatório é um resultado do banco de dados e é mostrado apartir de um documento em .xlsx (excel).
+
+<h2>INFORMAÇÕES EXTRAS</h2>
+
+- Cada placa só pode ter seu ciclo realizado 10 vezes, depois disso, a placa é bloqueada e não pode ser movimentada.
+- A remoção das placas do sistema é realizado apartir de um programa de ADM, onde pode-se ver todas as placas cadastradas e remover apartir de seu GRN.
+- Como dito antes, o sistema roda em Python, e apartir da biblioteca CherryPy, é possivel que qualquer computador da rede acesse o endereço do sistema.
+
+
