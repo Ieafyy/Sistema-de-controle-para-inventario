@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOVIMENTAÇÃO PLACAS DE PERFIL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="" style="background: rgb(101, 109, 150);
+;
+">
+
+<header class="border-b-2 bg-sky-700 justify-end grid grid-cols-2" style="min-height: 60px; max-height: 60px;background: rgb(187,187,187);
+background: linear-gradient(56deg, rgba(187,187,187,1) 0%, rgba(187,187,187,1) 72%, rgba(255,255,255,1) 72%);">
+
+   <p class="lg:text-3xl sm:text-xl font-bold ml-10 lg:mt-2.5 sm:mt-4 text-white">Controle de Placas de Perfil</p>
+
+</header>
+
+<div class="grid lg:grid-cols-3 sm:grid-cols-1 lg:grid-rows-1 sm:grid-rows-3 text-center lg:gap-4 sm:gap-10 mx-10 lg:mt-36 sm:mt-10">
+    <div class="rounded-2xl pt-5 bg-white/30 backdrop-blur-sm">
+        <p class="font-bold text-2xl mb-10">SAÍDA</p>
+        <form method="POST" action="SAIDA_F" class="flex flex-col align-center">
+            <div>
+            <input type="text" name="GRN_S" id="GRN_S" placeholder="GRN" class="w-10/12 text-black rounded-xl p-2 text-center mb-4">
+            <input type="text" name="PESSOA_S" id="PESSOA_S" placeholder="PESSOA" class="text-black w-10/12 rounded-xl p-2 text-center mb-4">
+            <input type="text" name="LINHA_S" id="LINHA_S" placeholder="LINHA" class="text-black w-10/12 rounded-xl p-2 text-center mb-4">
+            <br>
+            <button type="submit" class="border border-black px-10 py-1 rounded-xl bg-stone-100 hover:bg-stone-600 hover:text-white duration-300">SAIDA</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <div class="rounded-2xl pt-5 bg-white/30 backdrop-blur-sm">
+        <p class="font-bold text-2xl mb-10">ENTRADA</p>
+        <form action="ENTRADA_F" method="POST" class="flex flex-col align-center">
+            <div>
+            <input type="text" name="GRN_E" id="GRN_E" placeholder="GRN" class="w-10/12 text-black rounded-xl p-2 text-center mb-4">
+            <br>
+            <button type="submit" class="border border-black px-10 py-1 rounded-xl bg-stone-100 hover:bg-stone-600 hover:text-white duration-300">ENTRADA</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="rounded-2xl pt-5 bg-white/30 backdrop-blur-sm">
+        <p class="font-bold text-2xl mb-10">CADASTRO</p>
+        <form action="CADASTRO_F" method="POST" class="flex flex-col align-center">
+            <div>
+            <input type="text" name="GRN_C" id="GRN_C" placeholder="GRN" class="border-black w-10/12 text-black rounded-xl p-2 text-center mb-4">
+            <br>
+            <button type="submit" class="border border-black px-10 py-1 rounded-xl bg-stone-100 hover:bg-stone-600 hover:text-white duration-300">CADASTRO</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <div class="text-center mt-10">
+        <label for="btn">
+            <p class="hover:cursor-pointer bg-white/30 backdrop-blur-sm text-xl border border-black rounded-xl inline-flex px-10 py-3 hover:bg-black/30 hover:text-white duration-300">PLACAS CADASTRADAS</p>
+        </label>
+        <form action="PLACAS_F" method="POST">
+            <button id="btn" class="hidden" type="submit">PLACAS</button>
+        </form>
+    </div>
+
+    <footer class="text-center text-white sm:mt-10 lg:mt-48">
+
+        <p style="color:rgb(101, 109, 150)">Made by: Raphael Ramalho & Matheus Antunes</p>
+        <p class="text-xl text-black mb-3">Tool Crib</p>
+    </footer>
+
+
+
+</body>
+</html>
