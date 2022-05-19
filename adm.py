@@ -3,10 +3,10 @@ import pandas as pd
 
 con = mysql.connector.connect(
 
-        host="localhost",
-        user="root",
-        password="Leafy2022!",
-        database="banco_teste",
+        host="host",
+        user="user",
+        password="password",
+        database="database",
         
         # banco_teste -> placas = GRN LOCAL USUARIO MOVIMENTACAO VEZES
 )
