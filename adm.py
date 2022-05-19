@@ -8,7 +8,7 @@ con = mysql.connector.connect(
         password="password",
         database="database",
         
-        # banco_teste -> placas = GRN LOCAL USUARIO MOVIMENTACAO VEZES
+        # database-> placas = GRN LOCAL USUARIO MOVIMENTACAO VEZES
 )
 
 cursor = con.cursor()
